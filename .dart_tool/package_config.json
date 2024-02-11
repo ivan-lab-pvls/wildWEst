@@ -32,12 +32,6 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "audio_session",
-      "rootUri": "file:///Users/ivanlabasok/.pub-cache/hosted/pub.dev/audio_session-0.1.18",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
       "name": "auto_route",
       "rootUri": "file:///Users/ivanlabasok/.pub-cache/hosted/pub.dev/auto_route-7.8.4",
       "packageUri": "lib/",
@@ -404,24 +398,6 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "just_audio",
-      "rootUri": "file:///Users/ivanlabasok/.pub-cache/hosted/pub.dev/just_audio-0.9.36",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "just_audio_platform_interface",
-      "rootUri": "file:///Users/ivanlabasok/.pub-cache/hosted/pub.dev/just_audio_platform_interface-4.2.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "just_audio_web",
-      "rootUri": "file:///Users/ivanlabasok/.pub-cache/hosted/pub.dev/just_audio_web-0.4.9",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
       "name": "lints",
       "rootUri": "file:///Users/ivanlabasok/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
@@ -576,12 +552,6 @@
       "rootUri": "file:///Users/ivanlabasok/.pub-cache/hosted/pub.dev/pubspec_parse-1.2.3",
       "packageUri": "lib/",
       "languageVersion": "2.18"
-    },
-    {
-      "name": "rxdart",
-      "rootUri": "file:///Users/ivanlabasok/.pub-cache/hosted/pub.dev/rxdart-0.27.7",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
     },
     {
       "name": "share_plus",
@@ -860,7 +830,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2024-02-11T17:51:45.466024Z",
+  "generated": "2024-02-11T18:29:20.930560Z",
   "generator": "pub",
   "generatorVersion": "3.2.4"
 }

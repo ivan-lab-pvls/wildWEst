@@ -27,7 +27,6 @@ dependencies:
   flutter_screenutil: ^5.9.0
   flutter_svg: ^2.0.9
   get_it: ^7.6.7
-  just_audio: ^0.9.36
   pro_animated_blur: ^0.0.2+1
   provider: ^6.1.1
   share_plus: ^7.2.1

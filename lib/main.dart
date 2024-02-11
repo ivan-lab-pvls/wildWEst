@@ -3,17 +3,13 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get_it/get_it.dart';
-import 'package:just_audio/just_audio.dart';
 import 'package:neptune/theme/default.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'bloc/audio.dart';
 import 'router/router.dart';
 
-final player = AudioPlayer();
 final locator = GetIt.instance;
-bool musicIncluded = false;
-String musicAssetPath = 'assets/music.mp3';
 
 main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,16 +17,7 @@ main() async {
     DeviceOrientation.landscapeLeft,
     DeviceOrientation.landscapeRight,
   ]);
-  if (musicIncluded) {
-    player.setAsset(musicAssetPath);
-    player.play();
-    player.playerStateStream.listen((state) {
-      if (state.processingState == ProcessingState.completed) {
-        player.seek(Duration.zero);
-        player.play();
-      }
-    });
-  }
+
   final sharedPreferences = await SharedPreferences.getInstance();
   locator.registerLazySingleton<SharedPreferences>(() => sharedPreferences);
   // locator<SharedPreferences>().clear();
@@ -40,14 +27,7 @@ main() async {
     await locator<SharedPreferences>().setBool('diff3', false);
   }
   runApp(
-    MultiBlocProvider(
-      providers: [
-        BlocProvider.value(
-          value: AudioBloc(player: player),
-        ),
-      ],
-      child: MainApp(),
-    ),
+    MainApp(),
   );
 }
 

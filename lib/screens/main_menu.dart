@@ -4,7 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_exit_app/flutter_exit_app.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:just_audio/just_audio.dart';
 import 'package:neptune/router/router.dart';
 import 'package:neptune/widgets/custom_text_button.dart';
 import 'package:neptune/widgets/icon_button.dart';
@@ -22,7 +21,7 @@ class MainMenuScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final audioBloc = BlocProvider.of<AudioBloc>(context);
+    // final audioBloc = BlocProvider.of<AudioBloc>(context);
 
     return Scaffold(
       body: Container(
@@ -64,7 +63,7 @@ class MainMenuScreen extends StatelessWidget {
                           )
                         ]),
                   ),
-                  SoundAndSettings(audioBloc: audioBloc),
+                  SoundAndSettings(),
                   Align(
                     alignment: Alignment.bottomRight,
                     child: CustomTextIconButton(

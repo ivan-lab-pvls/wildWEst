@@ -8,9 +8,8 @@ import '../bloc/audio.dart';
 import 'icon_button.dart';
 
 class SoundAndSettings extends StatelessWidget {
-  final AudioBloc audioBloc;
 
-  const SoundAndSettings({super.key, required this.audioBloc});
+  const SoundAndSettings({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,21 +17,6 @@ class SoundAndSettings extends StatelessWidget {
       alignment: Alignment.bottomLeft,
       child: Row(
         children: [
-          if (musicIncluded)
-            BlocBuilder<AudioBloc, AudioState>(
-              builder: (context, state) {
-                return CustomIconButton(
-                  path: state.iconAsset,
-                  callback: (_) {
-                    if (state.isPlaying) {
-                      audioBloc.add(AudioEvent.pause);
-                    } else {
-                      audioBloc.add(AudioEvent.play);
-                    }
-                  },
-                );
-              },
-            ),
           Padding(
             padding: EdgeInsets.only(
                 left: 5 * MediaQuery.of(context).devicePixelRatio),

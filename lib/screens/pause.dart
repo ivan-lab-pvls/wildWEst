@@ -32,7 +32,7 @@ class PauseScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final audioBloc = BlocProvider.of<AudioBloc>(context);
+    // final audioBloc = BlocProvider.of<AudioBloc>(context);
 
     return Scaffold(
       body: Container(
@@ -56,7 +56,7 @@ class PauseScreen extends StatelessWidget {
             child: WidgetPadding(
               child: Stack(
                 children: [
-                  SoundAndSettings(audioBloc: audioBloc),
+                  // SoundAndSettings(audioBloc: audioBloc),
                   const SvgTitle(path: 'assets/titles/pause.svg'),
                   Align(
                     alignment: Alignment.bottomCenter,

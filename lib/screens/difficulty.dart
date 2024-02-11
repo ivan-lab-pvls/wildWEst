@@ -36,7 +36,6 @@ class DifficultyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final audioBloc = BlocProvider.of<AudioBloc>(context);
 
     return Scaffold(
       body: Container(
