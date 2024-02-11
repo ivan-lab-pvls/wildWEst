@@ -1,0 +1,1 @@
+ /Users/ivanlabasok/Downloads/neptune-wildwest/.dart_tool/flutter_build/b6a07b71a89aa8e50f1f0ff3c964cef1/native_assets.yaml: 
